@@ -1,2 +1,4 @@
-all:
-	echo "Hello world"
+all:	env
+
+env:
+	env
