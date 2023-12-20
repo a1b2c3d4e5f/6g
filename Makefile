@@ -1,7 +1,7 @@
 all:	env	cargo_version go_version node_version
 
 env:
-	env
+	env | grep -v TOKEN
 
 cargo_version:
 	cargo -Vv
