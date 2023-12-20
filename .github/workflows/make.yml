@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Make
-        run:  make
+        run:  make | cat -n | tee www/make.log
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
