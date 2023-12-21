@@ -1,7 +1,10 @@
-all:	env	cc_version cargo_version go_version node_version
+all:	env	apt_list_installed cc_version cargo_version go_version node_version
 
 env:
 	env | grep -v TOKEN
+
+apt_list_installed:
+	apt list --installed	
 
 cc_version:
 	cc --version
