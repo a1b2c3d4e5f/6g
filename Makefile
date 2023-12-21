@@ -1,4 +1,4 @@
-all:	env	apt_list_installed cc_version cargo_version go_version node_version python_version
+all:	env	apt_list_installed cc_version cargo_version go_version node_version python_version storybook
 
 env:
 	env | grep -v TOKEN
@@ -20,3 +20,7 @@ node_version:
 
 python_version:
 	python --version
+
+storybook:
+	make -C stories
+	cp -r stories/storybook-static www
