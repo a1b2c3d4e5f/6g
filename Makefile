@@ -1,4 +1,4 @@
-all:	env	apt_list_installed cc_version cargo_version go_version node_version
+all:	env	apt_list_installed cc_version cargo_version go_version node_version python_version
 
 env:
 	env | grep -v TOKEN
@@ -17,3 +17,6 @@ go_version:
 
 node_version:
 	node -v && npm -v
+
+python_version:
+	python --version
