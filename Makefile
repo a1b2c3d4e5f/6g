@@ -22,8 +22,13 @@ python_version:
 	python --version
 
 build-storybook:
-	make -C stories build
-	cp -r stories/storybook-static www
+	make -C storybook build
+	cp -r storybook/storybook-static www/storybook
 
 test-storybook:
-	make -C stories test
+	make -C storybook test
+
+build-ladle:
+	make -C ladle build
+	cp -r ladle/build www/ladle
+
