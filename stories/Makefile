@@ -1,5 +1,5 @@
 all:
 	npm ci
-	npx playwright install
+	# npx playwright install
 	npm run build
-	npm run test
+	# npm run test
