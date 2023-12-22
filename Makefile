@@ -16,7 +16,8 @@ go_version:
 	go version
 
 node_version:
-	node -v && npm -v && pnpm -v
+	node -v && npm -v
+	npm install -g pnpm && pnpm -v
 
 python_version:
 	python --version
