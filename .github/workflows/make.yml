@@ -34,7 +34,7 @@ jobs:
         run:  make | cat -n | tee www/make.log
       - name: Build Storybook
         run: make build-storybook
-      - name; Build Ladle
+      - name: Build Ladle
         run: make build-ladle
       - name: Setup Pages
         uses: actions/configure-pages@v4
